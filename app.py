@@ -1,8 +1,10 @@
 from logging import debug
 from flask import Flask
+from flask_cors import CORS, cross_origin
 
 
 flask_app = Flask(__name__)
+CORS(flask_app, support_credentials=True)
 
 
 if __name__ == "__main__":
